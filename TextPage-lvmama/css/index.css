@@ -1,0 +1,161 @@
+body {
+  background-color: #f7f7f7d5;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 0.703125rem;
+  padding: 0 0.15625rem;
+  background-color: #ccc;
+  box-sizing: border-box;
+}
+.header .left-city {
+  float: left;
+  color: #d1059a;
+}
+.header h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 0.265625rem;
+  font-weight: normal;
+}
+.header .r-info {
+  position: absolute;
+  top: 0.078125rem;
+  right: 0.15625rem;
+  float: right;
+  width: 0.390625rem;
+  height: 0.390625rem;
+  vertical-align: middle;
+}
+.header .r-info img {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.main .banner {
+  width: 100%;
+  height: 3.046875rem;
+  overflow: hidden;
+}
+.main .banner ul {
+  width: 700%;
+  height: 3.046875rem;
+}
+.main .banner ul li {
+  float: left;
+}
+.main .pic-hot {
+  width: 100%;
+}
+.main .pic-hot ul {
+  width: 100%;
+}
+.main .pic-hot li {
+  padding: 0.078125rem;
+  float: left;
+  width: 33.333%;
+}
+.main .nav-pic {
+  width: 100%;
+}
+.main .nav-pic ul {
+  width: 100%;
+}
+.main .nav-pic li {
+  float: left;
+  width: 25%;
+}
+.main .lv-child {
+  width: 100%;
+  overflow: hidden;
+}
+.main .lv-child ul {
+  width: 100%;
+}
+.main .lv-child li {
+  border: 1px solid #f7f7f7;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+}
+.main .hot-active {
+  margin: 0.25rem 0;
+  overflow: hidden;
+}
+.main .hot-active .title {
+  padding-left: 0.265625rem;
+  width: 100%;
+  height: 0.59375rem;
+}
+.main .hot-active ul {
+  width: 100%;
+}
+.main .hot-active li {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #ccc;
+}
+.main .big-pic {
+  width: 100%;
+}
+.main .big-pic .title {
+  width: 100%;
+  height: 0.703125rem;
+}
+.main .big-pic .title div {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.main .big-pic .title div a {
+  display: inline-block;
+  color: #d1059a;
+  height: 0.703125rem;
+  box-sizing: border-box;
+}
+.main .big-pic .title div .active {
+  border-bottom: 2px solid #d1059a;
+}
+.main .big-pic .main-pic {
+  width: 100%;
+  margin-bottom: 0.265625rem;
+}
+.main .big-pic .main-pic p {
+  padding-left: 0.078125rem;
+  font-size: 0.203125rem;
+  color: #333;
+}
+.main .big-pic .main-pic p:last-child {
+  padding-left: 0.078125rem;
+  font-size: 0.28125rem;
+  color: #666;
+}
+.main .see-more {
+  text-align: center;
+  background-color: #fff;
+}
+.main .see-more i {
+  padding-left: 0.3125rem;
+}
+.footer {
+  width: 100%;
+  height: 0.46875rem;
+  margin-top: 0.3125rem;
+  background-color: #d1059a;
+  padding: 0 0.203125rem;
+  line-height: 0.46875rem;
+}
+.footer a {
+  color: #f7f7f7;
+  float: left;
+}
+.footer a:first-child {
+  margin-right: 0.3125rem;
+}
+.footer a:last-child {
+  float: right;
+}
