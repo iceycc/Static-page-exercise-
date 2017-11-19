@@ -1,0 +1,184 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+.common-right .center {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  width: 101px;
+  height: 101px;
+  z-index: 10;
+}
+.common-right .down {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 174px;
+  height: 61px;
+  animation: down 1s linear infinite alternate;
+  z-index: 10;
+}
+@keyframes down {
+  from {
+    bottom: 50px;
+  }
+  to {
+    bottom: 70px;
+  }
+}
+.screen01 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url('../img/01-bg.png') no-repeat bottom;
+}
+.screen01 .fly {
+  width: 470px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%, 50px);
+  animation: screen01_fly 1s linear infinite alternate;
+}
+.screen01 .sofa {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  width: 134px;
+  height: 147px;
+  margin-left: -245px;
+  animation: screen01_sofa 0.8s linear infinite alternate;
+}
+.screen01 .goods {
+  width: 800px;
+  height: 274px;
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  margin-left: -400px;
+}
+@keyframes screen01_fly {
+  from {
+    transform: translate(-50%, 50px);
+  }
+  to {
+    transform: translate(-50%, 70px);
+  }
+}
+@keyframes screen01_sofa {
+  from {
+    top: 150px;
+  }
+  to {
+    top: 170px;
+  }
+}
+.screen02 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/02-bg.png") no-repeat bottom;
+}
+.screen02 .text {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translateX(-50%);
+  width: 363px;
+  height: 27px;
+}
+.screen02 .goods {
+  position: absolute;
+  left: 50%;
+  top: 230px;
+  width: 441px;
+  height: 218px;
+  transform-origin: right bottom;
+  transform: translate(-50%) scale(0);
+}
+.screen02 img.sofa-hide {
+  position: absolute;
+  left: 50%;
+  top: 194px;
+  width: 207px;
+  height: 166px;
+  transform: translate(-159px) scale(0.5);
+}
+@keyframes screen02_goods {
+  from {
+    transform: translate(-50%) scale(0);
+  }
+  to {
+    transform: translate(-50%) scale(1);
+  }
+}
+.screen02 .search {
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  width: 222px;
+  height: 45px;
+  transform: translateX(380px);
+  opacity: 0;
+}
+.screen02 .search img:last-child {
+  position: absolute;
+  left: 100px;
+  top: 3px;
+  opacity: 0;
+  animation: screen02_search_key 1s 1.5s linear forwards;
+}
+@keyframes screen02_search_key {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes screen02_search {
+  from {
+    opacity: 0;
+    transform: translateX(380px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(-120px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(-120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(80px) translateY(-140px) scale(0.8);
+  }
+}
+.screen02 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/03-bg.png") no-repeat bottom;
+}
+.screen02 .btns {
+  position: absolute;
+  left: 50%;
+  top: 480px;
+  width: 218px;
+  margin-left: 50px;
+}
+.screen02 .btns img {
+  position: absolute;
+}
+.screen02 .btns img:last-child {
+  display: none;
+}
+.select .screen02 .goods {
+  animation: screen02_goods 1s 3s linear forwards;
+}
+.select .screen02 .search {
+  animation: screen02_search 4s linear forwards;
+}
