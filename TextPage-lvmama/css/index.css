@@ -32,113 +32,101 @@ body {
   width: 100%;
   height: 100%;
 }
-.main {
+.lv-main {
   width: 100%;
   overflow: hidden;
 }
-.main .banner {
-  width: 100%;
-  height: 3.046875rem;
-  overflow: hidden;
-}
-.main .banner ul {
-  width: 700%;
-  height: 3.046875rem;
-}
-.main .banner ul li {
-  float: left;
-}
-.main .pic-hot {
+.lv-main .pic-hot {
   width: 100%;
 }
-.main .pic-hot ul {
+.lv-main .pic-hot ul {
   width: 100%;
 }
-.main .pic-hot li {
+.lv-main .pic-hot li {
   padding: 0.078125rem;
   float: left;
   width: 33.333%;
 }
-.main .nav-pic {
+.lv-main .nav-pic {
   width: 100%;
 }
-.main .nav-pic ul {
+.lv-main .nav-pic ul {
   width: 100%;
 }
-.main .nav-pic li {
+.lv-main .nav-pic li {
   float: left;
   width: 25%;
 }
-.main .lv-child {
+.lv-main .lv-child {
   width: 100%;
   overflow: hidden;
 }
-.main .lv-child ul {
+.lv-main .lv-child ul {
   width: 100%;
 }
-.main .lv-child li {
+.lv-main .lv-child li {
   border: 1px solid #f7f7f7;
   box-sizing: border-box;
   float: left;
   width: 50%;
 }
-.main .hot-active {
+.lv-main .hot-active {
   margin: 0.25rem 0;
   overflow: hidden;
 }
-.main .hot-active .title {
+.lv-main .hot-active .title {
   padding-left: 0.265625rem;
   width: 100%;
   height: 0.59375rem;
 }
-.main .hot-active ul {
+.lv-main .hot-active ul {
   width: 100%;
 }
-.main .hot-active li {
+.lv-main .hot-active li {
   width: 100%;
   float: left;
   border-bottom: 1px solid #ccc;
 }
-.main .big-pic {
+.lv-main .big-pic {
   width: 100%;
 }
-.main .big-pic .title {
+.lv-main .big-pic .title {
   width: 100%;
   height: 0.703125rem;
 }
-.main .big-pic .title div {
+.lv-main .big-pic .title div {
   width: 50%;
   float: left;
   text-align: center;
 }
-.main .big-pic .title div a {
+.lv-main .big-pic .title div a {
   display: inline-block;
   color: #d1059a;
   height: 0.703125rem;
   box-sizing: border-box;
 }
-.main .big-pic .title div .active {
+.lv-main .big-pic .title div .active {
   border-bottom: 2px solid #d1059a;
 }
-.main .big-pic .main-pic {
+.lv-main .big-pic .main-pic {
   width: 100%;
   margin-bottom: 0.265625rem;
 }
-.main .big-pic .main-pic p {
+.lv-main .big-pic .main-pic p {
   padding-left: 0.078125rem;
   font-size: 0.203125rem;
   color: #333;
 }
-.main .big-pic .main-pic p:last-child {
+.lv-main .big-pic .main-pic p:last-child {
   padding-left: 0.078125rem;
   font-size: 0.28125rem;
   color: #666;
 }
-.main .see-more {
+.lv-main .see-more {
   text-align: center;
   background-color: #fff;
 }
-.main .see-more i {
+.lv-main .see-more i {
   padding-left: 0.3125rem;
 }
 .footer {

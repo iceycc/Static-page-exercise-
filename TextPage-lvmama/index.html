@@ -9,6 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./js/flexible_css.js"></script>
   <script src="./js/flexible.js"></script>
+  <!-- 引入mui   css -->
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <!-- 引入mui   字体库 -->
+  <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -25,47 +30,69 @@
     </div>
   </header>
   <!-- 主体 -->
-  <main class="main">
+  <main class="lv-main">
     <!-- 轮播图 -->
-    <div class="banner">
-      <ul>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner1.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner2.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner3.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner4.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner5.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner6.jpg" alt="">
-          </a>
-        </li>
-        <li>
+    <div class="lv-banner mui-slider">
+      <ul class="mui-slider-group mui-slider-loop">
+        <li class="mui-slider-item mui-slider-item-duplicate">
           <a href="javascript:;">
             <img src="./images/img/banner7.jpg" alt="">
           </a>
         </li>
+        <li class="mui-slider-item">
+          <a href="javascript:;">
+            <img src="./images/img/banner1.jpg" alt="">
+          </a>
+        </li>
+        <li class="mui-slider-item">
+          <a href="javascript:;">
+            <img src="./images/img/banner2.jpg" alt="">
+          </a>
+        </li>
+        <li class="mui-slider-item">
+          <a href="javascript:;">
+            <img src="./images/img/banner3.jpg" alt="">
+          </a>
+        </li>
+        <li class="mui-slider-item">
+          <a href="javascript:;">
+            <img src="./images/img/banner4.jpg" alt="">
+          </a>
+        </li>
+        <li class="mui-slider-item">
+          <a href="javascript:;">
+            <img src="./images/img/banner5.jpg" alt="">
+          </a>
+        </li>
+        <li class="mui-slider-item">
+          <a href="javascript:;">
+            <img src="./images/img/banner6.jpg" alt="">
+          </a>
+        </li>
+        <li class="mui-slider-item">
+          <a href="javascript:;">
+            <img src="./images/img/banner7.jpg" alt="">
+          </a>
+        </li>
+        <li class="mui-slider-item mui-slider-item-duplicate">
+          <a href="javascript:;">
+            <img src="./images/img/banner1.jpg" alt="">
+          </a>
+        </li>
       </ul>
+            <div class="mui-slider-indicator">
+              <div class="mui-indicator mui-active"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+            </div>
     </div>
+
     <!-- 图片导航 -->
     <div class="pic-hot">
       <ul>
@@ -255,7 +282,17 @@
   </footer>
 
 
- 
+
+  <script src="./lib/mui/js/mui.min.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+
+  <script>
+    var gallery = mui('.mui-slider');
+    gallery.slider({
+      interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    var fn = () 
+  </script>
 </body>
 
 </html>
