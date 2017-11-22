@@ -39,7 +39,7 @@ html,body{
   }
 }
 
-// 2-????==================
+// 2-????==============
 // --?1??---------------
 .screen01{
   width: 100%;
@@ -120,21 +120,42 @@ html,body{
     transform-origin: right bottom;
     transform:translate(-50%) scale(0);
   }
-  img.sofa-hide{
-    position: absolute;
-    left: 50%;
-    top: 194px;
-    width: 207px;
-    height: 166px;
-    transform:translate(-159px) scale(0.5)
-  }
-  // ??  ??
+
+  // ??  ?? 调用在后面
   @keyframes screen02_goods{
     from{
       transform:translate(-50%) scale(0);
     }
     to{
       transform:translate(-50%) scale(1)
+    }
+  }
+    // 隐藏的沙发 
+  img.sofa-hide{
+    position: absolute;
+    left: 50%;
+    top: 194px;
+    width: 207px;
+    height: 166px;
+    transform:translate(-159px) scale(0.5);
+    opacity: 0;
+    &.animate{
+         animation:screen02_to_screen03 1.5s linear forwards;
+
+    }
+  }
+  @keyframes screen02_to_screen03 {
+    from {
+      opacity: 1;
+      transform:translate(-159px) scale(1);
+      top:194px;
+      z-index:10;
+    }
+    to {
+      opacity: 1;
+      transform:translate(-235px) scale(1);
+      top:900px;
+      z-index: 10;
     }
   }
   // ???  ????
@@ -183,12 +204,28 @@ html,body{
     }
   }
 }
-// --?3??
-.screen02{
+// --屏3样式
+.screen03{
   position: relative;
   width: 100%;
   height: 100%;
   background:url("../img/03-bg.png") no-repeat bottom;
+  .size{
+    width: 296px;
+    height: 131px;
+    position: absolute;
+    left: 50%;
+    top: 345px;
+    margin-left: 50px;
+    img{
+      position:absolute;
+      top: 0;
+      height: 0;
+      &:last-child{
+        display:none;
+      }
+    }
+  }
   .btns{
     position:absolute;
     left: 50%;
@@ -202,6 +239,118 @@ html,body{
       }
     }
   }
+  // 第三屏的隐藏的斜沙发
+  .hide-sofa{
+    position:absolute;
+    left: 50%;
+    top: 230px;
+    margin-left:-235px;
+    opacity: 0;
+    &.animate{
+      animation: sreen03_to_screen04 1.5s linear;
+    }
+  }
+  // 从第三屏到第四屏隐藏沙发的动画
+  @keyframes sreen03_to_screen04 {
+    from{
+      opacity: 1;
+      top: 230px;
+      z-index: 10;
+      margin-left: -235px;
+    }
+    to{
+      opacity: 1;
+      top: 846px;
+      z-index: 10;
+      margin-left: -55px;
+    }
+  }
+
+}
+
+// 屏4 样式
+.screen04 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background:url("../img/04-bg.png") no-repeat bottom;
+  // 白云
+  .cloud{
+    width: 882px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -600px;
+    &.animate{
+      animation:screen04_cloud 5s linear infinite alternate;
+    }    
+  }
+  @keyframes screen04_cloud {
+    from {
+		 margin-left: -600px;
+    }
+    to {
+          margin-left: 100px;
+    }
+  }
+  .text{
+    position:absolute;
+    left: 50%;
+    top: 10px;
+    width: 429px;
+    height: 32px;
+    transform: translate(-50%);
+    img{
+      position:absolute;
+      &::last-child{
+      display:none;
+      }
+    }
+
+  }
+  .address{
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 150px;
+    width: 283px;
+    height: 270px;
+    display:none;   
+    img:last-child{
+      position:absolute;
+      left: 50%;
+      transform: translate(-50%);
+      top:50px;
+      display:none;
+    }
+  } 
+  .cart{
+    width: 407px;
+    height: 346px;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translate(-50%);
+    z-index: 10;
+    // TODO:注意
+    transition: all 1s linear;
+    &.animate{
+      transform: translate(800px);
+    }
+    img{
+      position: absolute;
+      &:first-child{
+        position:absolute;
+        left:50%;
+        top: -50px;
+        margin-left:50px;
+        transform: translate((-50px));
+        display:none;
+      }
+    }
+  }
+  
 }
 
 //--?????????????????? 
